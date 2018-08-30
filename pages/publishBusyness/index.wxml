@@ -1,0 +1,35 @@
+<!--pages/publishBusyness/index.wxml-->
+<view class='wrapper'>
+    <view class='content'>
+        <view>
+            <text>任务名称</text>
+            <input type='text' placeholder='最多25个字' bindinput='busynessName'></input>
+        </view>
+        <view class='busynessDescription'>
+            <text>任务描述</text>
+            <!-- <input type='text'  placeholder='建议填写任务简介，要求' bindinput='busynessContent'></input> -->
+            <textarea placeholder='建议填写任务简介，要求……' bindinput='busynessContent'></textarea>
+        </view>
+        <view>
+            <text>价格</text>
+            <input type='text' placeholder='￥' bindinput='busynessPrice'></input>
+        </view>
+        <view>
+            <text>任务类型</text>
+            <picker range='{{busynessType}}' value='{{busynessIndex}}' bindchange='bindBusynessChange'>
+               <text class='busynessType'>{{busynessType[busynessIndex]}}</text>
+            </picker>
+        </view>
+        <view>
+            <text>手机号</text>
+            <input type='text' placeholder='手机号' bindinput='phoneNumber'></input>
+        </view>
+        <view>
+            <text>QQ号</text>
+            <input type='text' placeholder='QQ号' bindinput='qqNumber'></input>
+        </view>
+    </view>
+    <view class='btn'>
+         <button bindtap='busynessPublish'>发布</button>
+    </view>
+</view>

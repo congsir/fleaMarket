@@ -1,0 +1,38 @@
+/* pages/goodsShow/index.wxss */
+page{
+  background-color: #f6f6f6;
+  font-size: 14px;
+}
+.goodsShow{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.goodsShow view{
+  position: relative;
+   width: 40%;
+   height: 400rpx;
+   margin: 40rpx 0;
+   border: 1px solid #e5e5e5;
+}
+.goodsShow image{
+  width: 100%;
+  height: 300rpx;
+}
+.goodsShow .content{
+  display: block;
+  font-size: 26rpx;
+  overflow:hidden;         
+  text-overflow:ellipsis; 
+  white-space:nowrap;     
+  text-indent: 1em;
+}
+.goodsShow .price{
+  position: absolute;
+  right: 30rpx;
+  font-weight: bold;
+  color: #f40;
+}

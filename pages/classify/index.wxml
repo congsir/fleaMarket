@@ -1,0 +1,145 @@
+<view class="container">
+  <view class="nav_left">
+    <block wx:for="{{navLeftItems}}" wx:key='item'>
+      <view class="nav_left_items {{curNav == index ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{index}}">{{item}}</view>
+    </block>
+  </view>
+  <view class="nav_right">
+    <view class='{{show[0]}}'>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '自行车'>
+            <image src='../../images/bike.png'/>
+            <text>自行车</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '电动车'>
+            <image src='../../images/electriclBike.png'></image>
+            <text>小电驴</text>
+        </view>
+    </view>
+    <view class='{{show[1]}}'>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '考研书籍'>
+            <image src='../../images/title01.png'/>
+            <text>考研书籍</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '课外读物'>
+            <image src='../../images/title02.png'></image>
+            <text>课外读物</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '专业书籍'>
+            <image src='../../images/title03.png'></image>
+            <text>专业书籍</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '课本书籍'>
+            <image src='../../images/title04.jpg'></image>
+            <text>课本书籍</text>
+        </view>
+    </view>
+
+     <view class='{{show[2]}} digital-equipment'>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '笔记本电脑'>
+            <image src='../../images/pc.jpg'/>
+            <text>笔记本电脑</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '电脑主机'>
+            <image src='../../images/zhuji.jpg'></image>
+            <text>电脑主机</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '手机'>
+            <image src='../../images/mobilePhone.jpg'></image>
+            <text>手机</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '平板电脑'>
+            <image src='../../images/paid.jpg'></image>
+            <text>平板电脑</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '摄影器材'>
+            <image src='../../images/camera.jpg'></image>
+            <text>摄影器材</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '显示设备'>
+            <image src='../../images/display.jpg'></image>
+            <text>显示设备</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '鼠标'>
+            <image src='../../images/mouse.jpg'></image>
+            <text>鼠标</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '键盘'>
+            <image src='../../images/keyboard.jpg'></image>
+            <text>键盘</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '移动电源'>
+            <image src='../../images/mobliePower.jpg'></image>
+            <text>移动电源</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = 'U盘'>
+            <image src='../../images/Upan.jpg'></image>
+            <text>U盘</text>
+        </view>
+    </view>
+
+    <view class='{{show[3]}} VIPcards'>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '网络课程'>
+            <image src='../../images/pc.jpg'/>
+            <text>网络课程</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '健身房'>
+            <image src='../../images/fitness.jpg'></image>
+            <text>健身房vip</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '台球厅vip'>
+            <image src='../../images/billiards.jpg'></image>
+            <text>台球厅vip</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '发廊vip'>
+            <image src='../../images/barber.jpg'></image>
+            <text>发廊vip</text>
+        </view>
+    </view>
+
+    <view class='{{show[4]}} smallEquipment'>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '台灯'>
+            <image src='../../images/lamp.jpg'/>
+            <text>台灯</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '吹风机'>
+            <image src='../../images/blower.jpg'></image>
+            <text>吹风机</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '小风扇'>
+            <image src='../../images/smallFan.jpg'></image>
+            <text>小风扇</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '洗衣机'>
+            <image src='../../images/washing.jpg'></image>
+            <text>洗衣机</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '小锅'>
+            <image src='../../images/cooker.jpg'></image>
+            <text>小锅</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '其它'>
+            <image src='../../images/else.jpg'></image>
+            <text>其它</text>
+        </view>
+    </view>
+    <view class='{{show[5]}} life'>
+        <view class = 'items' bindtap = 'navigateToNext' data-value = '衣服'>
+            <image src='../../images/timg.jpg'/>
+            <text>衣服</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext'data-value = '鞋子' >
+            <image src='../../images/shoes.jpg'></image>
+            <text>鞋子</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext'data-value = '运动'>
+            <image src='../../images/basketball.jpg'></image>
+            <text>运动</text>
+        </view>
+        <view class = 'items' bindtap = 'navigateToNext'data-value = '娱乐'>
+            <image src='../../images/steam.jpg'></image>
+            <text>娱乐</text>
+        </view>
+    </view>
+    <!-- <view>暂无数据</view> -->
+  </view>
+</view>

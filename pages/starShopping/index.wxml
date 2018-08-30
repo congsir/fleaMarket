@@ -1,0 +1,17 @@
+<view class='containor'>
+   <view class='starContent'>
+      <block wx:for='{{myStarShopping}}' wx:key = 'item'>
+         <view class="myGoods {{item.state == 1 ? 'active' : 'normal' }}" bindtap='active' data-item='{{item}}'>
+            <image src='../../images/delete.jpg' class='delete' bindtap='deleteStar' data-item='{{item}}'></image>
+              <image src='{{item.imgList[0]}}' class='showPicture' bindtap='navgate' data-item='{{item}}' ></image>
+              <text class='goodsName'>{{item.goodsName}}</text>
+              <text class='price'>￥ {{item.goodsPrice}}</text>
+              <icon type='success' size='30' color='red'></icon>
+         </view>
+      </block>
+   </view>
+   <view class='starButtom'>
+    <view class='starButtomButton' bindtap='closeAccount'>结算</view>
+    <view class='starButtomContent'><text>总计：\t ￥ {{total}}</text></view>
+   </view>
+</view>

@@ -1,0 +1,19 @@
+<!--pages/editPage/index.wxml-->
+<view class='top'>
+    <image src='../../images/user.png'></image>
+    <view class='addPicture'></view>
+</view>
+<view class='content'>
+    <view>
+         <text>我的签名</text>
+         <input type='text' placeholder='我的签名'></input>
+    </view>
+    <view>
+         <text>手机号</text>
+         <input type='text' placeholder='手机号'></input>
+    </view>
+    <view>
+         <text>QQ号</text>
+         <input type='text' placeholder='QQ号'></input>
+    </view>
+</view>

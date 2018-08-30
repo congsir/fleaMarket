@@ -1,0 +1,57 @@
+.containor{
+  width: 100vw;
+  height: 100vh;
+  background-color: #f6f6f6;
+}
+.containor .user{
+  position: relative;
+  width: 100vw;
+  height: 20vh;
+  background-color: #a77d6e;
+  border-top: 1px solid #fff;
+}
+.containor .user image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 60rpx;
+  margin-top: -75rpx;
+}
+.containor .user text{
+  font-size: 30rpx;
+  color: #fff;
+  display: block;
+  margin-left: 300rpx;
+}
+.containor .user .userName{
+  margin: 30rpx 0 30rpx 300rpx ;
+}
+.containor .user .userQQ{
+  margin: 0 0  30rpx 300rpx;
+}
+.containor .usingModel view{
+  height: 10vh;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #797979;
+  font-size: 30rpx;
+  line-height: 10vh;
+  padding-left: 30rpx;
+}
+.usingModel .myDescription{
+  position: relative;
+}
+.usingModel .myDescription text{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.usingModel .myDescription input{
+  display: inline-block;
+  height: 10vh;
+  line-height: 10vh;
+  margin-left: 180rpx;
+  margin-top: 5rpx;
+}

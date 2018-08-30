@@ -1,0 +1,36 @@
+<!--pages/searchPage/index.wxml-->
+<view class='wrapper'>
+  <view class='top'>
+      <view class='search'>
+          <image src='../../images/search.jpg'></image>
+          <view class='line'></view>
+           <input type='text' placeholder='搜索你喜欢的商品'></input>
+      </view>
+      <button bindtap='navigateBackPage'>取消</button>
+  </view>
+  <view class='content'>
+      <view class='content-top'>
+         <text>热门搜索</text>
+         <text>换一批</text>
+      </view>
+      <view class='content-main'>
+      <text>笔记本电脑</text>
+      <text>联想</text>
+      <text>考研书籍</text>
+      <text>游戏</text>
+      <text>篮球</text>
+      <text>大四</text>
+      <text>随便搜搜</text>
+      <text>找朋友</text>
+      <text>笔记本电脑</text>
+      <text>联想</text>
+      <text>考研书籍</text>
+      <text>游戏</text>
+      <text>篮球</text>
+      <text>大四</text>
+      <text>随便搜搜</text>
+      <text>找朋友</text>
+      </view>
+  </view>
+  
+</view>

@@ -1,0 +1,186 @@
+/* pages/taskDetail/index.wxss */
+page{
+  background-color: #f6f6f6;
+}
+.container{
+  width: 100%;
+}
+.container .page-body{
+  width: 100%;
+}
+.container .page-body .page-top{
+  width: 100%;
+  height: 50vh;
+}
+.container .page-body .page-top view{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.container .page-body .page-top view image{
+  width: 70%;
+  height: 100%;
+}
+.container .page-body .page-top view .head{
+  position: absolute;
+  top: 80rpx;
+  font-weight: bold;
+}
+.container .page-body .page-top view .content{
+  display: inline-block;
+  width: 65%;
+  position: absolute;
+  top: 140rpx;
+  font-size: 25rpx;
+  text-indent: 2rem;
+}
+
+
+/*页面中间内容展示区样式  */
+
+.container .page-body .page-middle .page-middle-content{
+  width: 100vw;
+  height: 12vh;
+  color:#fff;
+  position: relative;
+   background-color: rgba(167,125,110,0.7); 
+}
+.container .page-body .page-middle .page-middle-content text:nth-of-type(1){
+  font-size: 18px;
+  position: absolute;
+  top: 20rpx;
+  left: 40rpx;
+}
+.container .page-body .page-middle .page-middle-content text:nth-of-type(2){
+  font-size: 14px;
+  position: absolute;
+  bottom: 15rpx;
+  left: 30rpx;
+}
+.container .page-body .page-middle .page-middle-content text:nth-of-type(3){
+  font-size: 14px;
+  position: absolute;
+  bottom: 15rpx;
+  right: 30rpx;
+}
+.container .page-body .page-middle .page-middle-content view{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background-color: #f40;
+  position: absolute;
+  top: -60rpx;
+  right: 20rpx;
+}
+.container .page-body .page-middle .page-middle-content view text:nth-of-type(1){
+  font-size: 14px;
+  position: absolute;
+  left: 45rpx;
+  top: 5rpx;
+}
+.container .page-body .page-middle .page-middle-content view text:nth-of-type(2){
+  font-size: 18px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.page-middle-foot{
+  width: 100%;
+  height: 6vh;
+  background-color: #fff;
+}
+
+.page-middle-foot .btn{
+  display: inline-block;
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 6vh;
+  padding: 0 20rpx;
+  background: #a77d6e;
+  float: right;
+  line-height: 6vh;
+  color: #fff;
+}
+.page-middle-foot .btn-first{
+  margin-left: 2px;
+}
+
+/*个人信息展示部分  */
+.page-bottom{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.page-bottom .username{
+  width: 90%;
+  margin: 20rpx auto 0;
+  background-color: #fff;  
+  position: relative;
+}
+.page-bottom .username image{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  padding: 20rpx 20rpx 10rpx 20rpx;
+  display: inline-block;
+}
+.page-bottom .username text{
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 120rpx;
+  transform: translateY(-50%);
+}
+
+.page-bottom .despriation{
+  width: 90%;
+  margin: 20rpx auto 0;
+  background-color: #fff;  
+  position: relative;
+}
+.page-bottom .despriation image{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  padding: 20rpx 20rpx 10rpx 20rpx;
+  float: left;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.page-bottom .despriation text{
+  display: block;
+  margin-top: 30rpx;
+  font-size: 14px
+}
+.page-bottom .phoneNumber{
+  width: 90%;
+  margin: 20rpx auto 0;
+  background-color: #fff;  
+  position: relative;
+}
+.page-bottom .phoneNumber image{
+  width: 60rpx;
+  height: 60rpx;
+  display: block;
+  border-radius: 50%;
+  margin: 20rpx 20rpx 10rpx 20rpx;
+  float: left;
+  overflow: hidden;
+}
+.page-bottom .phoneNumber text{
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 120rpx;
+  transform: translateY(-50%);
+}

@@ -1,0 +1,62 @@
+{
+  "pages":[
+    
+    "pages/index/index",
+    "pages/myPublishBusyness/index",
+    "pages/taskDetail/index",
+    "pages/goodsDetail/index",
+    "pages/myOrder/index",
+    "pages/publishGoods/index",
+    "pages/my/index",
+    "pages/starShopping/index",
+    "pages/classify/index",
+    "pages/editPage/index",
+    "pages/hurryBusyness/index",
+    "pages/longTimeBusyness/index",
+    "pages/normalBusyness/index",
+    "pages/publishBusyness/index",
+    "pages/searchPage/index",
+    "pages/goodsShow/index",
+    "pages/myGoods/index"
+    
+   
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#a77d6e",
+    "navigationBarTitleText": "主页",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#a77d6e",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/footer-icon-01.png",
+        "selectedIconPath": "images/footer-icon-01-active.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/classify/index",
+        "iconPath": "images/footer-icon-02.png",
+        "selectedIconPath": "images/footer-icon-02-active.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/starShopping/index",
+        "iconPath": "images/footer-icon-03.jpg",
+        "selectedIconPath": "images/footer-icon-03-active.jpg",
+        "text": "我的收藏"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "iconPath": "images/footer-icon-04.png",
+        "selectedIconPath": "images/footer-icon-04-active.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

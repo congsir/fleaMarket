@@ -1,0 +1,37 @@
+<!--pages/taskDetail/index.wxml-->
+<view class='container'>
+  <view class='page-body'>
+    <view class='page-top'>
+        <view>
+          <image src='../../images/parchment.jpg'></image>
+          <text class='head'>{{busynessName}}</text>
+          <text class='content'>{{busynessContent}}</text>
+        </view>
+    </view>
+    <view class='page-middle'>
+        <view class='page-middle-content'>
+            <text>发布时间 : {{publishTime}}</text>
+            <text>浏览次数 : {{browseTime}}</text>
+            <view><text>￥</text><text>{{busynessPrice}}</text></view>
+        </view>
+        <view class='page-middle-foot'>
+             <!-- <view class='btn btn-first' bindtap='addToStarShopping'>加入收藏</view> -->
+             <view class='btn '>联系发布者</view>   
+        </view>
+    </view>
+    <view class='page-bottom'>
+            <view class='username'>
+                <image src='../../images/user.png'></image>
+                <text>用户名</text>
+            </view>
+            <view class='phoneNumber clearfix'>
+                <image src='../../images/phone.jpg'></image>
+                <text>手机： {{phoneNumber}}</text>
+            </view>
+            <view class='phoneNumber clearfix qqNumber'>
+                <image src='../../images/qq.jpg'></image>
+                <text>QQ： {{qqNumber}}</text>
+            </view>
+    </view>
+  </view>
+</view>

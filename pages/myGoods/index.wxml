@@ -1,0 +1,14 @@
+<!--pages/myGoods/index.wxml-->
+<view class='wrapper'>
+     <view class='myGoodsList'>
+          <block wx:for = "{{myGoodsList}}" wx:key = 'item'>
+        <view bindtap='tapNavgate' data-item ='{{item}}'>
+            <view class='picture'>
+            <image src='{{item.imgList[0]}}'></image>
+             </view>
+            <text class='name'>{{item.goodsName}}</text>
+            <text class='price'>￥{{item.goodsPrice}}</text>
+        </view>
+      </block>
+     </view>
+</view>

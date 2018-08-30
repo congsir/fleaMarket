@@ -1,0 +1,35 @@
+/* pages/myGoods/index.wxss */
+page{
+  background-color: #f6f6f6;
+  font-size: 18px;
+}
+.wrapper .myGoodsList view{
+  position: relative;
+  height: 14vh;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #a77d6e;
+}
+.wrapper .myGoodsList view .picture{
+    position: absolute;
+    left: 20rpx;
+    top: 5%;
+    width: 200rpx;
+    height: 90%;
+    border: 1px solid #a77d6e;
+}
+.wrapper .myGoodsList view .picture image{
+  width: 100%;
+  height: 100%;
+}
+.wrapper .myGoodsList view text:nth-of-type(1){
+  position: absolute;
+  left: 240rpx;
+  top: 10rpx;
+}
+.wrapper .myGoodsList view text:nth-of-type(2){
+  position: absolute;
+  right: 60rpx;
+  bottom: 20rpx;
+  color: red;
+}

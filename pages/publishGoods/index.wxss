@@ -1,0 +1,81 @@
+/* pages/publishGoods/index.wxss */
+.wrapper-top{
+  width: 100%;
+  height: 20vh;
+  background-color: #a77d6e;
+  border-top: 1px solid #fff;
+  overflow: hidden;
+}
+.wrapper-top image{
+  width: 20vw;
+  height: 20vw;
+  float: left;
+  margin-left: 25rpx;
+  margin-top: 3vh;
+}
+.wrapper-top-img{
+  padding-left: 20rpx;
+}
+.wrapper-top-img::after{
+  display: block;
+  content: '';
+  clear: both;
+}
+.wrapper-top text{
+  display: inline-block;
+  width: 100%;
+  font-size: 28rpx;
+  text-align: center;
+  color: #fff;
+}
+.wrapper-content view{
+  width: 100%;
+  height: 8vh;
+  border: 1px solid #000;
+  position: relative;
+}
+.wrapper-content view text{
+  position: absolute;
+  display: inline-block;
+  height: 8vh;
+  font-size: 30rpx;
+  left: 40rpx;
+  line-height: 8vh;
+}
+.wrapper-content view input{
+  position: absolute;
+  left: 160rpx;
+  display: inline-block;
+  margin-left: 30rpx;
+  height: 8vh;
+  line-height: 8vh;
+  font-size: 30rpx;
+}
+.wrapper-content view .pickerOne view{
+  width: 28vw;
+  margin-left: 30rpx;
+  position: absolute;
+  left: 170rpx;
+  background: #f6f6f6;
+  border: none;
+}
+.wrapper-content view .pickerTwo view{
+  width: 28vw;
+  margin-left: 30rpx;
+  position: absolute;
+  left: 440rpx;
+  background: #f6f6f6;
+  border: none;
+}
+.wrapper-content view::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.btn button{
+  width: 25%;
+  background: #a77d6e;
+  color: #fff;
+  margin-top: 5rpx;
+  margin-left: 75%;
+}

@@ -1,0 +1,15 @@
+<!--pages/longTimeBusyness/index.wxml-->
+<view class='wrapper'>
+    <view class='content'>
+        <block wx:for='{{longTimeBusynessArr}}' wx:key='item'>
+            <view bindtap='navgate' data-item='{{item}}'>
+              <image src='../../images/parchment.jpg'></image>
+              <text>{{item.busynessName}}</text>
+              <text>{{item.busynessContentLogo}}</text>
+              <text>￥ {{item.busynessPrice}}</text>
+            </view>
+        </block>
+          
+    </view>
+</view>
+

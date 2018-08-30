@@ -1,0 +1,53 @@
+<!--pages/publishGoods/index.wxml-->
+<view class='wrapper-top'>
+   <view class='wrapper-top-img'>
+       <block wx:for = '{{imgList}}' wx:key = 'item'>
+         <image src='{{item}}'></image>
+       </block>
+      <image src='../../images/zhanwei.jpg' bindtap='chooseimage' style='display:{{display}}'></image>
+   </view>
+    <text>最多上传4张照片</text>
+</view>
+<view class='wrapper-content'>
+    <view>
+         <text>商品名称</text>
+         <input type='text' placeholder='最多25个字' bindinput='goodsName'></input>
+    </view>
+     <view>
+         <text>商品描述</text>
+         <input type='text' placeholder='建议填写商品用途，新旧程度，原价' bindinput='goodsDespriction'></input>
+    </view>
+     <view>
+         <text>商品价格</text>
+         <input type='text' placeholder='￥' bindinput='goodsPrice'></input>
+    </view>
+     <view>
+         <text>选择分类</text>
+         <picker bindchange='bindCasPickerChange' value = '{{casIndex}}' range='{{casArray}}' class='pickerOne'>
+         <view>
+            <text>{{casArray[casIndex]}}</text>
+         </view>
+         </picker>
+
+         <picker bindchange='bindCasPickerChangeSecond' value = '{{casIndexSecond}}' range='{{select}}' class='pickerTwo'>
+         <view>
+            <text>{{select[casIndexSecond]}}</text>
+         </view>
+         </picker>
+    </view>
+     <view>
+         <text>交易地点</text>
+         <input type='text' placeholder='建议校内' bindinput='tradePlace'></input>
+    </view>
+     <view>
+         <text>手机号</text>
+         <input type='text' placeholder='11大陆手机号' bindinput='phoneNumber'></input>
+    </view>
+     <view>
+         <text>QQ号</text>
+         <input type='text' placeholder='联系QQ' bindinput='qqNumber'></input>
+    </view>
+</view>
+<view class='btn'>
+         <button bindtap='publish'>发布</button>
+</view>

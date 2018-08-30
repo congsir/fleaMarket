@@ -1,0 +1,51 @@
+<!--index.wxml-->
+<view class="container">
+       
+    <view>
+        <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval = '{{interval}}'   duration='{{duration}}'   indicator-active-color='{{color}}' circular='{{circular}}'>
+            <block wx:for="{{imgUrls}}" wx:key = 'item'>
+              <swiper-item>
+                <image src="{{item}}" class="slide-image"/>
+              </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <navigator url='../searchPage/index'>
+        <view class='search'>
+          <image src='../../images/search.jpg'></image>
+          <view class='line'></view>
+           <text>搜索喜欢的商品</text>
+         </view>
+    </navigator>
+    
+    <view class='middleWrapper'>
+      <navigator url = '../publishGoods/index'>
+         <view class='middleLeft'>
+          <image src='../../images/camera.jpg' />
+          <text>发布商品</text>
+        </view>
+      </navigator>
+      
+      <view class='middleRight'>
+        <navigator url='../publishBusyness/index'>
+          <image src='../../images/message.png' />
+          <text>发布任务</text>
+        </navigator>
+      </view>
+    </view>
+    <view class='middleNavgator'>
+      <text class='showWord'>热门商品</text>
+      <image src='../../images/hot.png' />
+    </view>
+    <view class="goodsShow">
+      <block wx:for = "{{goodsList}}" wx:key = 'item'>
+        <view bindtap='tapNavgate' data-item='{{item}}' >
+            <image src='{{item.imgList[0]}}'></image>
+            <text class='content'>{{item.goodsName}}</text>
+            <text class='price'>￥{{item.goodsPrice}}</text>
+        </view>
+      </block>
+    </view>
+
+          
+</view>

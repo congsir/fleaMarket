@@ -1,0 +1,28 @@
+<view class='containor'>
+    <view class='user'>
+       <navigator url='../editPage/index'>
+          <image src='../../images/user.png'></image>
+       </navigator>
+      <text class='userName'>用户名：洺宸</text>
+      <text class='userQQ'>QQ： 894719813</text>
+      <text class='userPhoneNumber'>手机： 13554662352</text>
+    </view>
+    <view class='usingModel'>
+      <view class='myDescription'>
+          <text>我的签名</text>
+          <input type='text' placeholder='我的签名' bindblur='saveMysignal'>{{mysignal}}</input>
+      </view>
+      <navigator url='../myOrder/index'>
+          <view class='myOrder'>我的订单</view>
+      </navigator>
+      <navigator url='../myGoods/index'>
+          <view class='myGoods'>我的商品</view>
+      </navigator>
+      <view class='mySchool'>我的学校</view>
+      <navigator url='../myPublishBusyness/index'>
+         <view class='mytask'>我的任务</view>
+      </navigator>
+     
+      <view class='aboutUs'>关于我们</view>
+    </view>
+</view>

@@ -1,0 +1,53 @@
+<view class='navgator'>
+    <view class='nav-left {{leftClassName}}' bindtap='showMe'>待发货</view>
+    <view class='nav-right {{rightClassName}}' bindtap='showHistory'>交易历史</view>
+</view>
+<view class='content {{show}}'>
+    <view>
+         <view class='picture'>
+            <image src='../../images/showShopping03.png'></image>
+         </view>
+         <text>商品名称</text>
+         <text>价格</text>
+    </view>
+    <view>
+         <view class='picture'>
+            <image src='../../images/showShopping03.png'></image>
+         </view>
+         <text>商品名称</text>
+         <text>价格</text>
+    </view>
+    <view>
+         <view class='picture'>
+            <image src='../../images/showShopping03.png'></image>
+         </view>
+         <text>商品名称</text>
+         <text>价格</text>
+    </view>
+</view>
+<view class='historyContent {{hide}}'>
+    <view>
+         <view class='picture'>
+            <image src='../../images/lamp.jpg'></image>
+         </view>
+         <text>商品名称</text>
+         <text>价格</text>
+         <text>交易时间</text>
+    </view>
+    <view>
+         <view class='picture'>
+            <image src='../../images/lamp.jpg'></image>
+         </view>
+         <text>商品名称</text>
+         <text>价格</text>
+         <text>交易时间</text>
+    </view>
+    <view>
+         <view class='picture'>
+            <image src='../../images/lamp.jpg'></image>
+         </view>
+         <text>商品名称</text>
+         <text>价格</text>
+         <text>交易时间</text>
+    </view>
+</view>
